@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Spartan", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffdf4;
+}
+.navbar .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 198px;
+  height: 38px;
+  padding: 3rem;
+}
+
+.navbar h1 {
+  font-weight: 600;
+  color: #454545;
+  font-size: 24pt;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 18pt;
+  color: #454545;
+}
+
+.botoes a {
+  padding: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffdf4;
+}
+
+.esquerda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.esquerda h1 {
+    font-size: 56pt;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #1B18F9, #1B18F9, #E146AD);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+.esquerda .conteudo p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+.esquerda button {
+    height: 69px;
+    width: 210px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.direita {
+    background-image: url(imgs/direita.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.baleia {
+    width: 100%;
+    height: auto;
+}
