@@ -4,89 +4,116 @@
   font-family: "Spartan", sans-serif;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fffdf4;
-}
-.navbar .logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 198px;
-  height: 38px;
-  padding: 3rem;
-}
-
-.navbar h1 {
-  font-weight: 600;
-  color: #454545;
-  font-size: 24pt;
-}
-
-.botoes {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-  font-weight: 500;
-  font-size: 18pt;
-  color: #454545;
-}
-
-.botoes a {
-  padding: 3rem;
-}
-
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fffdf4;
+  height: 100vh;
 }
 
-.esquerda {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container #esquerda {
+  width: 55%;
   position: relative;
 }
 
-.esquerda h1 {
-    font-size: 56pt;
-    font-weight: bold;
-    background-image: linear-gradient(to bottom, #1B18F9, #1B18F9, #E146AD);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: black;
-}
-.esquerda .conteudo p {
-    text-align: justify;
-    font-weight: 400;
-    font-size: 20pt;
+.container #esquerda #crab {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  max-width: 550px;
+  width: 100%;
+  height: auto;
 }
 
-.esquerda button {
-    height: 69px;
-    width: 210px;
-    border: 0;
-    outline: 0;
-    border-radius: 20px;
-    text-transform: uppercase;
-    margin-top: 2rem;
-    font-weight: 600;
-    cursor: pointer;
+.container #esquerda header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
 }
 
-.direita {
-    background-image: url(imgs/direita.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.container #esquerda header nav #logo {
+  display: flex;
+  align-items: center;
+  font-size: 14pt;
+  font-weight: 600;
+  color: #454545;
 }
 
-.baleia {
-    width: 100%;
-    height: auto;
+.container #esquerda header nav #botoesnavbar a {
+  text-decoration: none;
+  margin-right: 3rem;
+  font-size: 10pt;
+  font-weight: 500;
+  color: #454545;
+}
+
+.container #conteudo {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 215px);
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin-left: 8rem;
+}
+
+.container #conteudo h2 {
+  background-image: linear-gradient(to bottom, #1b18f9, #1b18f9, #e146ad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48pt;
+  font-weight: 700;
+}
+
+.container #conteudo p {
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+.container #conteudo #cta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.container #conteudo #cta button {
+  border: 0;
+  outline: 0;
+  width: 210px;
+  height: 69px;
+  border-radius: 20px;
+  font-size: 18pt;
+  font-weight: 600;
+  color: white;
+  background: rgb(194, 127, 207);
+  background: linear-gradient(
+    90deg,
+    rgba(194, 127, 207, 1) 0%,
+    rgba(3, 104, 255, 1) 100%
+  );
+}
+
+.container #conteudo #cta button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all ease-in-out 0.2s;
+}
+
+.container #conteudo #cta a {
+  background-image: linear-gradient(to bottom, #1b18f9, #1b18f9, #e146ad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24pt;
+  font-weight: 600;
+}
+
+.container #direita {
+  background-image: url("imgs/direita.png");
+  width: 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
